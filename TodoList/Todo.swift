@@ -41,7 +41,7 @@ class TodoManager {
         //TODO: create로직 추가
         let nextId = TodoManager.lastId + 1
         TodoManager.lastId = nextId
-        return Todo(id: nextId, isDone: false, detail: detail, isToday: true)
+        return Todo(id: nextId, isDone: false, detail: detail, isToday: isToday)
     }
     
     func addTodo(_ todo: Todo) {
